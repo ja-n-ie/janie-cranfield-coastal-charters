@@ -1,0 +1,819 @@
+/*
+
+Coastal Charters
+
+  # FONTS
+  # GENERAL
+    ## TYPOGRAPHY
+    ## LINKS
+  # PRIMARY HEADER
+  # SECTION: HERO
+  # CONTENT CONTAINER
+    ## SECTION: ABOUT
+    ## SECTION: EXPERIENCE
+      ### ARTICLE: THE REEL DEAL
+      ### ARTICLE: UNDER THE SURFACE
+      ### ARTICLE: THE RIG
+    ## SECTION: RATES
+    ## SECTION: GALLERY
+    ## SECTION: TESTIMONIALS
+    ## SECTION: LOCATION
+    ## SECTION: CONTACT
+  # FOOTER
+  # BUTTONS
+
+*/
+
+
+/* # FONTS ---------------*/
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto/roboto_bold/Roboto-Bold-webfont.eot');
+    src: url('../fonts/roboto/roboto_bold/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto_bold/Roboto-Bold-webfont.woff') format('woff'),
+         url('../fonts/roboto/roboto_bold/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto/roboto_bold/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('../fonts/roboto/roboto_bold/Roboto-BoldItalic-webfont.eot');
+    src: url('../fonts/roboto/roboto_bold/Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto_bold/Roboto-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/roboto/roboto_bold/Roboto-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/roboto/roboto_bold/Roboto-BoldItalic-webfont.svg#robotobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto/roboto_italic/Roboto-Italic-webfont.eot');
+    src: url('../fonts/roboto/roboto_italic/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto_italic/Roboto-Italic-webfont.woff') format('woff'),
+         url('../fonts/roboto/roboto_italic/Roboto-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/roboto/roboto_italic/Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto/roboto_regular/Roboto-Regular-webfont.eot');
+    src: url('../fonts/roboto/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto_regular/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/roboto/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto/roboto_regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('../fonts/quicksand/quicksand-light-webfont.eot');
+    src: url('../fonts/quicksand/quicksand-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand/quicksand-light-webfont.woff') format('woff'),
+         url('../fonts/quicksand/quicksand-light-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand/quicksand-light-webfont.svg#quicksandlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* # GENERAL ---------------*/
+
+body {
+  background-color: #fff;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #2d2d2d;
+  margin: 0;
+  height: 100%;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+  text-align: right;
+}
+
+
+/* ## TYPOGRAPHY ---------------*/
+
+p {
+  line-height: 22px;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+p.alignleft {
+  text-align: left;
+  margin: 0px 40px 20px 0px;
+}
+
+h1 {
+  font-family: "robotoregular";
+  font-size: 2.7rem;
+  padding-top: 17px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  font-family: "quicksandlight";
+  font-size: 2.4rem;
+  padding: 70px 0px 37px 0px;
+  line-height: 40px;
+  color: #253a59;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
+}
+
+h2:hover {
+  transition: all 300ms linear;
+  transform: translate(0) scale(1.2);
+  text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.8);
+}
+
+#reel-deal #under-surface #rig {
+  padding-top: 0px;
+}
+
+h3 {
+  font-family: "robotoitalic";
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+h4 {
+  font-family: "robotoitalic";
+  font-size: 1.4rem;
+  color: #FFF;
+  text-align: center;
+  padding: 50px 0px 20px 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#testimonials h4 {
+  color: #61c9ec;
+  font-family: "robotobold";
+}
+
+#testimonials p:nth-child(3) {
+  font-family: "robotobold";
+}
+
+
+
+
+/* ## LINKS ---------------*/
+
+a {
+  color: #4382ad;
+}
+
+a:hover {
+  color: #61c9ec;
+}
+
+
+/* # PRIMARY HEADER ---------------*/
+
+.primary-header {
+  text-align: center;
+  background-color: #231f20;
+}
+
+
+navbar {
+  height: auto;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+/*nav ul {
+  width: 100%;
+  height: auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+nav li  {
+  position: relative;
+  padding: 8px 16px 12px 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}*/
+
+.toggle-nav {
+  text-decoration: none;
+}
+
+
+    .menu {
+      top: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      background: #343434 ;
+      position: fixed;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    }
+
+    .menu li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color on hover */
+    .menu li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+
+    /*.menu ul.active {
+        display:none;
+    }
+
+    .menu ul {
+        width:100%;
+        position:absolute;
+        top:120%;
+        left:0px;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+    }
+
+    .menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:22px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+    }
+
+    .menu li {
+        color: #FFF;
+        margin:5px 0px 5px 0px;
+        float:none;
+        display:block;
+    }*/
+
+    /*.menu a {
+        color: #FFF;
+        display:block;
+    }*/
+
+    .toggle-nav {
+        padding:5px;
+        display:inline-block;
+        border-radius:3px;
+        font-size:20px;
+        transition:color linear 0.15s;
+    }
+
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color:#66a992;
+    }
+
+
+
+
+
+
+
+/* # SECTION: HERO ---------------*/
+
+.logo-icon {
+  padding: 0;
+  margin:0;
+  text-align: center;
+  position: relative;
+
+}
+
+.logo-icon img {
+  height: 100%;
+  width: auto;
+  max-height: 250px;
+}
+
+.logo-icon:hover {
+  transition: all 400ms ease-in-out;
+  transform: translate(0) scale(1.1);
+}
+
+.hero {
+  padding: 0;
+  margin:0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: url(../images/scales.png) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+figure {
+  height: 250px;
+}
+
+
+/* # CONTENT CONTAINER ---------------*/
+
+.content {
+  padding:0px 7px;
+  width: auto;
+  margin:auto;
+}
+
+
+/* ## SECTION: ABOUT ---------------*/
+
+
+/* ## SECTION: EXPERIENCE ---------------*/
+
+#experience {
+  background-color: #c8cac8;
+}
+
+
+/* ### ARTICLE: THE REEL DEAL ---------------*/
+
+
+/* ### ARTICLE: UNDER THE SURFACE ---------------*/
+
+
+/* ### ARTICLE: THE RIG ---------------*/
+
+
+/* ## SECTION: GALLERY ---------------*/
+
+#gallery {
+  background-color: #c8cac8;
+  padding-bottom: 70px;
+}
+
+.images {
+  margin: 0 auto;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.6)
+}
+
+.images div {
+  background-color: #FFF;
+  height: 200px;
+  position: relative;
+}
+
+.images div img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* ## SECTION: RATES---------------*/
+
+table {
+    border: solid thin #253a59;
+    width: 100%;
+    margin-bottom:30px;
+    line-height: 30px;
+    -ms-flex-item-align: right;
+        -ms-grid-row-align: right;
+        align-self: right;
+}
+
+th, td {
+    font-size: 1rem;
+    padding: 12px 50px;
+    text-align: center;
+    border-collapse:collapse;
+}
+
+th {
+  background-color: #253a59;
+  font-family: 'robotoitalic';
+  color: #FFF;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+tr:hover{
+  background-color: #8dc1d6;
+}
+
+
+/* ## SECTION: LOCATION ---------------*/
+
+iframe {
+  width:100%;
+  height: 210px;
+}
+
+.map {
+  margin: 18px 0;
+}
+
+.location {
+  padding-bottom: 25px;
+}
+
+
+/* ## SECTION: CONTACT ---------------*/
+
+label {
+    display:block;
+    margin-top:20px;
+    font-size:0.9em;
+    text-transform: uppercase;
+}
+
+form {
+    margin:0 auto;
+    width:300px;
+}
+
+input, textarea {
+  width:280px;
+    height:15px;
+    background:#efefef;
+    border:1px solid #c8cac8;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+
+textarea {
+	height:100px;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  background-color: #c8cac8;
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+
+/* # FOOTER ---------------*/
+
+.primary-footer {
+  color: white;
+  font-size: 1rem;
+  padding: 35px 12px;
+  background-color: #286692;
+  line-height: 25px;
+}
+
+.primary-footer p {
+  margin:12px 0;
+}
+
+.primary-footer div {
+  margin: 0 auto;
+}
+
+.social-media {
+  display: block;
+  text-align: center;
+  margin: 12px auto;
+  padding: 12px 0;
+}
+
+.social-media a {
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+.fa-ul a:hover {
+  color: #61c9ec;
+}
+
+.primary-footer a {
+  color: #fff;
+}
+
+.primary-footer .address {
+  color: #253a59;
+  font-weight: bold;
+}
+
+.primary-footer a:hover {
+  color: #61c9ec;
+}
+
+span {
+  display:none;
+}
+
+
+
+
+
+/* # MEDIA QUERIES ---------------*/
+
+/* =============================================
+
+ @media all and (min-width: 600px)
+
+   # FONTS
+   # GENERAL
+     ## TYPOGRAPHY
+     ## LINKS
+   # PRIMARY HEADER
+   # SECTION: HERO
+   # CONTENT CONTAINER
+     ## SECTION: ABOUT
+     ## SECTION: EXPERIENCE
+       ### ARTICLE: THE REEL DEAL
+       ### ARTICLE: UNDER THE SURFACE
+       ### ARTICLE: THE RIG
+     ## SECTION: RATES
+     ## SECTION: GALLERY
+     ## SECTION: TESTIMONIALS
+     ## SECTION: LOCATION
+     ## SECTION: CONTACT
+   # FOOTER
+   # BUTTONS
+
+ ============================================= */
+
+@media all and (min-width: 600px){
+
+
+
+
+  /* # SECTION: HERO ---------------*/
+
+  .logo-icon {
+    background-size: 40%;
+  }
+
+
+  /* ## SECTION: EXPERIENCE ---------------*/
+
+
+  .columns {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          }
+
+ .columns article {
+   width: 32%;
+   height: 100%;
+   padding: 0px 10px;
+
+ }
+
+
+   /* ## SECTION: RATES ---------------*/
+
+   .columns-table {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: flex-start;
+           }
+
+  .columns-table table {
+    width: 48%;
+    height: 100%;
+
+  }
+
+
+   /* ## SECTION: TESIIMONIALS ---------------*/
+
+   .columns {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: flex-start;
+           }
+
+  .columns article {
+    width: 32%;
+    height: 100%;
+
+  }
+
+
+  /* # FOOTER ---------------*/
+
+    .primary-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+
+    .primary-footer p {
+      text-align: left;
+      line-height: 19px;
+    }
+
+    .primary-footer div {
+      margin: 0px;
+    }
+
+    .social-media {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: left;
+      line-height: 22px;
+    }
+
+    .social-media a {
+      padding: 0px;
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+
+    span {
+      display: inline-block;
+      padding: 0px 25px 0px 15px;
+    }
+
+
+}
+
+
+/* =============================================
+
+@media all and (min-width: 1140px)
+
+# FONTS
+# GENERAL
+  ## TYPOGRAPHY
+  ## LINKS
+# PRIMARY HEADER
+# SECTION: HERO
+# CONTENT CONTAINER
+  ## SECTION: ABOUT
+  ## SECTION: EXPERIENCE
+    ### ARTICLE: THE REEL DEAL
+    ### ARTICLE: UNDER THE SURFACE
+    ### ARTICLE: THE RIG
+  ## SECTION: RATES
+  ## SECTION: GALLERY
+  ## SECTION: TESTIMONIALS
+  ## SECTION: LOCATION
+  ## SECTION: CONTACT
+# FOOTER
+# BUTTONS
+
+============================================== */
+
+@media all and (min-width: 1140px){
+
+
+  /* ## TYPOGRAPHY ---------------*/
+
+  p {
+    line-height: 27px;
+    font-size: 1rem;
+  }
+
+
+  h1 {
+    font-size: 7rem;
+    padding: 65px 0 60px 0;
+  }
+
+  h2 {
+    padding: 70px 0px 50px 0px;
+    font-size: 5rem;
+  }
+
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+
+  /* # PRIMARY HEADER ---------------*/
+
+
+  /* # SECTION: HERO ---------------*/
+
+  .logo-icon {
+    background-size: 20%;
+  }
+
+
+
+  /* ## SECTION: GALLERY ---------------*/
+
+
+  .images {
+    width: 900px;
+  }
+
+  .images div {
+    height: 600px;
+  }
+
+
+
+  /* ## SECTION: LOCATION ---------------*/
+
+  iframe {
+    height: 275px;
+  }
+
+  .map {
+    margin: 18px 0 36px 0;
+  }
+}
+
+
+
+/*@media all and (min-width: 1140px)*/
+
+
+/*.slick-prev,
+.slick-next
+{
+    width: 40px;
+    height: 40px;
+}*/
