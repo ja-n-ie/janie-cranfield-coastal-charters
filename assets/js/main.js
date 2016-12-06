@@ -1,20 +1,28 @@
 $(function() {
 
-//* Gallery Carousel Autoplay
+//* PAGE LOADER
+  $(document).ready(function () {
+    $("#divloader").addClass("HideLoader");
+        })
+  $(document).ready(function(){
+    $(".loader").fadeOut("slow");
+        });
+
+
+//* GALLERY CAROUSEL AUTOPLAY
   $('.images').slick({
     autoplay: true,
   });
 
 
-//* Navigation Toggle
+//* NAVIGATION TOGGLE
   var rightSidebar = $(".menu").sidebar({side: 'right'});
-
   $('.toggle-nav').on('click', function() {
     rightSidebar.trigger('sidebar:toggle');
   });
+ 
 
-
-//* Contact Form Completion
+//* CONTACT FORM COMPLETION
   $('#my-form').on('submit', function(event) {
      event.preventDefault();
      if ( $('#my-name-input').val() == '' ) {
