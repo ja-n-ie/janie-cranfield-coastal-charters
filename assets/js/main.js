@@ -20,7 +20,7 @@ $(function() {
   $('.toggle-nav').on('click', function() {
     rightSidebar.trigger('sidebar:toggle');
   });
- 
+
 
 //* CONTACT FORM COMPLETION
   $('#my-form').on('submit', function(event) {
