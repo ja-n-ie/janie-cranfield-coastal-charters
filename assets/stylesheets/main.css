@@ -18,7 +18,6 @@ Coastal Charters
     ## SECTION: LOCATION
     ## SECTION: CONTACT
   # FOOTER
-  # SCRIPTS
 
   # MEDIA QUERIES > follow below
 
@@ -105,8 +104,9 @@ body {
   font-family: "robotoregular", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #2d2d2d;
-  margin: 0;
+  margin: 0 auto;
   height: 100%;
+  max-width: 1366px;
 }
 
 
@@ -529,7 +529,6 @@ span {
      ## SECTION: GALLERY
      ## SECTION: TESTIMONIALS
      ## SECTION: LOCATION
-     ## SECTION: CONTACT
    # FOOTER
 
    ============================================= */
@@ -586,6 +585,14 @@ span {
 
       h3 {
         padding: 20px 0 20px 0;
+      }
+
+      h3#reel-deal,#under-surface,#rig {
+        padding-top: 50px;
+      }
+
+      #testimonials h3 {
+        padding-top: 50px;
       }
 
 
@@ -727,32 +734,74 @@ span {
 
     /* =============================================
 
-    @media all and (min-width: 1140px) and (max-width: 1366px)
+    @media all and (min-width: 1140px)
 
        ## TYPOGRAPHY
        ## LINKS
      # PRIMARY HEADER
      # SECTION: HERO
-     # CONTENT CONTAINER
-       ## SECTION: ABOUT
        ## SECTION: EXPERIENCE
        ## SECTION: RATES
        ## SECTION: GALLERY
-       ## SECTION: TESTIMONIALS
        ## SECTION: LOCATION
-       ## SECTION: CONTACT
      # FOOTER
-     # BUTTONS
 
     ============================================== */
 
     @media all and (min-width: 1140px){
-    /*@media all and (min-width: 1140px) and (max-width: 1366px)*/
+
+      /* ## TYPOGRAPHY ---------------*/
+
+    p {
+      line-height: 27px;
+      font-size: 1.1rem;
+    }
+
+    #about p {
+      padding: 0 90px 20px 90px;
+    }
+
+    #about p:nth-child(4) {
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      padding: 65px 0 40px 0;
+    }
+
+    #gallery h1 {
+      padding-bottom: 70px;
+    }
+
+    .location h1 {
+      padding-bottom: 70px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      padding: 40px 0 50px 0;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      padding: 30px 0;
+      letter-spacing: 3.5px;
+    }
+
+
+   /* ## LINKS ---------------*/
+
+    i.fa.fa-chevron-up {
+      font-size: 40px;
+    }
+
 
     /* # PRIMARY HEADER ---------------*/
 
     .menu {
       width: 220px;
+      font-size: 1.2rem;
     }
 
     .menu ul {
@@ -767,49 +816,6 @@ span {
      padding: 9px;
      font-size: 2.2rem;
     }
-
-
-    /* ## TYPOGRAPHY ---------------*/
-
-      p {
-        line-height: 27px;
-        font-size: 1.1rem;
-      }
-
-      #about p {
-        padding: 0 90px 20px 90px;
-      }
-
-      #about p:nth-child(4) {
-        padding-bottom: 60px;
-      }
-
-      h1 {
-        font-size: 4rem;
-        padding: 65px 0 40px 0;
-      }
-
-      #gallery h1 {
-        padding-bottom: 70px;
-      }
-
-      .location h1 {
-        padding-bottom: 70px;
-      }
-
-      h2 {
-        font-size: 2rem;
-        padding: 40px 0 50px 0;
-      }
-
-      h3 {
-        font-size: 1.6rem;
-        padding: 30px 0;
-        letter-spacing: 3.5px;
-      }
-
-
-      /* # PRIMARY HEADER ---------------*/
 
 
       /* # SECTION: HERO ---------------*/
